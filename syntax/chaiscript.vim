@@ -66,6 +66,7 @@ syn match   chaiscriptOperator     ":"
 
 " Comments
 syn match   chaiscriptComment      "//.*$" contains=@Spell
+syn match   chaiscriptComment      "\s*#.*$" contains=@Spell
 syn region  chaiscriptComment      matchgroup=chaiscriptComment start="/\*" end="\*/" contains=@Spell
 
 
