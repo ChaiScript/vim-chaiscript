@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	ChaiScript
-" Maintainer:	Jason Turner <lefticus 'at' gmail com>
+" Maintainer:	Jason Turner <jason 'at' emptycrate com>
 
 " Quit when a (custom) syntax file was already loaded
 if exists("b:current_syntax")
@@ -46,13 +46,13 @@ syn keyword chaiscriptStatement    break continue return
 syn keyword chaiscriptExceptions   try catch throw
 
 "Keyword
-syn keyword chaiscriptKeyword      def true false attr
+syn keyword chaiscriptKeyword      def true false attr class
 
 "Built in types
-syn keyword chaiscriptType         fun var
+syn keyword chaiscriptType         fun var auto
 
 "Built in funcs, keep it simple
-syn keyword chaiscriptFunc         eval throw
+syn keyword chaiscriptFunc         eval throw clone
 
 "Let's treat all backtick operator function lookups as built in too
 syn region  chaiscriptFunc         matchgroup=chaiscriptFunc start="`" end="`"
