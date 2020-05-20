@@ -46,13 +46,13 @@ syn keyword chaiscriptStatement    break continue return
 syn keyword chaiscriptExceptions   try catch throw
 
 "Keyword
-syn keyword chaiscriptKeyword      def true false attr class
+syn keyword chaiscriptKeyword      def true false attr class global
 
 "Built in types
 syn keyword chaiscriptType         fun var auto
 
 "Built in funcs, keep it simple
-syn keyword chaiscriptFunc         eval throw clone
+syn keyword chaiscriptFunc         eval throw clone to_string clone_var_attrs copy_var_attrs get_var_attr get_type_info is_var_const is_var_null is_var_pointer is_var_reference is_var_return_value is_type is_var_undef reset_var_return_value type_match bare_equal cpp_bare_name is_type_arithmetic is_type_const is_type_pointer is_type_reference is_type_undef is_type_void cpp_name get_attrs get_type_name is_explicit set_explicit get_annotation get_arity get_guard has_guard print_string println_string what
 
 "Let's treat all backtick operator function lookups as built in too
 syn region  chaiscriptFunc         matchgroup=chaiscriptFunc start="`" end="`"
